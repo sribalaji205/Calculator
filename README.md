@@ -16,4 +16,4 @@ A simple calculator built using Flask-Python
  
 # Screenshots
 
-![Screenshot](calculator.png)
+![Screenshot](https://github.com/sribalaji205/Calculator/blob/main/Calculator.PNG)
