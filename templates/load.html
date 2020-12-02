@@ -1,1 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CALCULATOR</title>
+<style>
+body{
+background-color:pink;
+width:auto;
+height:auto;
+}
+.button-group button{
+display:inline-block;
+background-color:black;
+color:white;
+border:3px solid white;
+border-radius:10px;
+padding: 20px 25px;
+margin:0.5px 0.5px 0.5px 0.5px;
+font-weight:bold;
+font-size:23px;
+}
+.button-group button:hover{
+background-color:grey;
+}
+input{
+width:88%;
+border-bottom:5px solid black;
+padding:16px 16px;
+font-size:20px;
+border-radius:6px;
+background-color:white;
+}
+.ab {
+position:relative;
+width:300px;
+margin:auto;
+background-color:grey;
+border:5px solid black;
+border-radius:10px;
+padding-bottom:5px;
+text-align:center;
+}
+</style>
+</head>
+<header style="text-align:center;"><h1>CALCULATOR</h1></header>
+<body>
+<form action="/calculate" method="POST">
+<div class="ab">
+<input style="text-align:center;" type="text" name="textbox" value="{{tot}}"/>
+<div class="button-group">
+<button style="padding-left:42px; padding-right:42px;" type="submit" name="code" value="C">C</button>
+<button style="padding-left:25px; padding-right:25px;" type="submit" name="code" value="DEL">DEL</button>
+<button type="submit" name="code" value="+">+</button>
+</div>
 
+<div class="button-group">
+<button type="submit" name="code" value="7">7</button>
+<button type="submit" name="code" value="8">8</button>
+<button type="submit" name="code" value="9">9</button>
+<button style="padding-left:28px; padding-right:28px; 
+font-size:23px" type="submit" name="code"value="-">-</button>
+</div>
+
+<div class="button-group">
+<button type="submit" name="code" value="4">4</button>
+<button type="submit" name="code" value="5">5</button>
+<button type="submit" name="code" value="6">6</button>
+<button type="submit" name="code" value="x">x</button>
+</div>
+
+<div class="button-group">
+<button type="submit" name="code" value="1">1</button>
+<button type="submit" name="code" value="2">2</button>
+<button type="submit" name="code" value="3">3</button>
+<button style="padding-left:28px; padding-right:28px;" 
+type="submit" name="code" value="/">/</button>
+</div>
+
+<div class="button-group">
+<button style="padding-left:28px; padding-right:28px;" 
+type="submit" name="code" value=".">.</button>
+<button style="padding-left:60px; padding-right:60px;" 
+type="submit" name="code" value="0">0</button>
+<button style="padding-left:21px; padding-right:22px;"
+type="submit" name="code" value="%">%</button>
+</div>
+
+<div class="button-group">
+<button type="submit" name="code" value="^">^</button>
+<button style="padding-left:26px; padding-right:26px;"
+type="submit" name="code" value="√">√</button>
+<button style="padding-left:60px; padding-right:60px;" 
+type="submit" name="code" value="=">=</button>
+</div>
+
+</div>
+
+</form>
+</body>
+</html>
